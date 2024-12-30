@@ -1,0 +1,109 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: url('/bg.jpg') no-repeat center center fixed;
+  background-size: cover;
+  height: 100vh; /* Full viewport height */
+  display: flex; /* Center content */
+  justify-content: center;
+  align-items: center;
+} 
+
+/* Main Container */
+.slam-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Form Styles */
+.slam-form {
+  background: rgba(102, 93, 93, 0.2); /* White with 80% opacity */
+  padding: 30px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  width: 400px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+.slam-title {
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+  color: #f11010; /* Slate blue color */
+  margin-bottom: 20px;
+  font-family: "Georgia", serif;
+}
+
+.form-group {
+  margin-bottom: 15px;
+  display: flex;
+  align-items: flex-start; /* Align top for multiline labels or groups */
+}
+
+.form-group label {
+  flex: 0 0 120px; /* Label width */
+  font-weight: bold;
+  color: #333;
+  text-align: right;
+  margin-right: 10px;
+  margin-top: 6px; /* Center align text vertically with input */
+}
+
+.slam-form input,
+.slam-form textarea,
+.slam-form select {
+  flex: 1; /* Input field takes remaining space */
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.slam-form textarea {
+  resize: none;
+  height: 80px;
+}
+
+.radio-group,
+.checkbox-group {
+  display: flex;
+  flex-wrap: wrap; /* Allows items to wrap if needed */
+  gap: 10px;
+  flex: 1; /* Align with input fields */
+  margin-top: 6px; /* Align vertically with the label */
+}
+
+.radio-group label,
+.checkbox-group label {
+  display: flex;
+  align-items: center;
+  gap: 5px; /* Small gap between input and label */
+  font-size: 14px;
+  color: #333;
+}
+
+.slam-form button {
+  display: block;
+  width: 120px; /* Wider button for better visibility */
+  padding: 10px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 20px auto 0; /* Center align the button */
+}
+
+.slam-form button:hover {
+  background-color: #45a049;
+}
+
+.slam-form select {
+  padding: 8px;
+}
